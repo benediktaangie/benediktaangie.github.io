@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Angie — Dance Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-brand">A.</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="index.html#achievements">Achievements</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="port-header">
+    <span class="eyebrow">Dance portfolio</span>
+    <h1 class="port-title">The <em>work.</em></h1>
+    <p class="port-sub">Every clip. Every style. Every moment.</p>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="hiphop">Hip-hop</button>
+    <button class="filter-btn" data-filter="waacking">Waacking</button>
+    <button class="filter-btn" data-filter="freestyle">Freestyle</button>
+    <button class="filter-btn" data-filter="performance">Performance</button>
+  </div>
+
+  <!-- PORTFOLIO MASONRY GRID -->
+  <div class="port-grid" id="portGrid">
+
+    <!--
+    ═══════════════════════════════════════════
+    HOW TO ADD YOUR OWN VIDEOS / PHOTOS:
+    ═══════════════════════════════════════════
+
+    For a VIDEO (YouTube or local file):
+      <div class="port-item" data-cat="hiphop">
+        <video poster="images/thumbnail.jpg" controls>
+          <source src="videos/your-video.mp4" type="video/mp4">
+        </video>
+        <div class="port-item-info">
+          <span class="card-tag">Hip-hop</span>
+          <p class="card-name">Your title here</p>
+          <p class="port-date">March 2024</p>
+        </div>
+      </div>
+
+    For a YOUTUBE embed (replace VIDEO_ID with your real YouTube ID):
+      <div class="port-item" data-cat="waacking">
+        <div class="yt-embed">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div>
+        <div class="port-item-info">
+          <span class="card-tag">Waacking</span>
+          <p class="card-name">Your title here</p>
+          <p class="port-date">January 2024</p>
+        </div>
+      </div>
+
+    data-cat options: hiphop / waacking / freestyle / performance
+    ═══════════════════════════════════════════
+    -->
+
+    <div class="port-item" data-cat="hiphop" style="background:#1a1208;">
+      <div class="port-item-thumb">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <span class="thumb-label">Add your video here</span>
+      </div>
+      <div class="port-item-info">
+        <span class="card-tag">Hip-hop</span>
+        <p class="card-name">Battle showcase '24</p>
+        <p class="port-date">December 2024</p>
+      </div>
+    </div>
+
+    <div class="port-item" data-cat="waacking" style="background:#120f1a;">
+      <div class="port-item-thumb">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <span class="thumb-label">Add your video here</span>
+      </div>
+      <div class="port-item-info">
+        <span class="card-tag">Waacking</span>
+        <p class="card-name">Girl style session</p>
+        <p class="port-date">October 2024</p>
+      </div>
+    </div>
+
+    <div class="port-item" data-cat="freestyle" style="background:#0f1814;">
+      <div class="port-item-thumb">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <span class="thumb-label">Add your video here</span>
+      </div>
+      <div class="port-item-info">
+        <span class="card-tag">Freestyle</span>
+        <p class="card-name">Studio vol. 1</p>
+        <p class="port-date">August 2024</p>
+      </div>
+    </div>
+
+    <div class="port-item" data-cat="performance" style="background:#130d0d;">
+      <div class="port-item-thumb">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <span class="thumb-label">Add your video here</span>
+      </div>
+      <div class="port-item-info">
+        <span class="card-tag">Performance</span>
+        <p class="card-name">Stage night</p>
+        <p class="port-date">June 2024</p>
+      </div>
+    </div>
+
+    <div class="port-item" data-cat="hiphop" style="background:#1a1208;">
+      <div class="port-item-thumb">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <span class="thumb-label">Add your video here</span>
+      </div>
+      <div class="port-item-info">
+        <span class="card-tag">Hip-hop</span>
+        <p class="card-name">Crew session</p>
+        <p class="port-date">April 2024</p>
+      </div>
+    </div>
+
+    <div class="port-item" data-cat="waacking" style="background:#120f1a;">
+      <div class="port-item-thumb">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <span class="thumb-label">Add your video here</span>
+      </div>
+      <div class="port-item-info">
+        <span class="card-tag">Waacking</span>
+        <p class="card-name">Waacking fundamentals</p>
+        <p class="port-date">February 2024</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

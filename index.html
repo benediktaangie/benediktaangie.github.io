@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Angie — Dancer & Artist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════ -->
+  <nav class="nav">
+    <div class="nav-brand">A.</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-left reveal">
+      <span class="eyebrow">Dancer · Artist · Identity</span>
+      <h1 class="hero-name">
+        ANGIE
+        <span class="italic-line">moves.</span>
+      </h1>
+      <p class="tagline">Hip-hop. Waacking. Girl style.<br>This is where the body speaks when words fall short.</p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn-gold">Enter portfolio</a>
+        <a href="#about" class="btn-line">My story ↓</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!-- 👇 REPLACE THIS: swap the src with the path to your photo -->
+      <!-- Example: src="images/angie.jpg" -->
+      <div class="photo-placeholder">
+        <div class="photo-frame">
+          <p class="photo-hint">Replace this with<br>your photo!</p>
+          <p class="photo-code">src="images/your-photo.jpg"</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span class="scroll-line"></span> scroll</div>
+    <div class="diagonal-slice"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TICKER STRIP
+  ════════════════════════════════════════════ -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Hip-hop</span><span class="dot">·</span>
+      <span>Waacking</span><span class="dot">·</span>
+      <span>Girl style</span><span class="dot">·</span>
+      <span>Freestyles</span><span class="dot">·</span>
+      <span>Performances</span><span class="dot">·</span>
+      <span>Battles</span><span class="dot">·</span>
+      <span>Hip-hop</span><span class="dot">·</span>
+      <span>Waacking</span><span class="dot">·</span>
+      <span>Girl style</span><span class="dot">·</span>
+      <span>Freestyles</span><span class="dot">·</span>
+      <span>Performances</span><span class="dot">·</span>
+      <span>Battles</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-left reveal">
+      <span class="section-kicker">Who I am</span>
+      <h2 class="section-heading">More than<br>a <em>move.</em></h2>
+      <!-- 👇 REPLACE THIS: write your own bio here -->
+      <p class="body-text">
+        Write your story here. Where did you start dancing? What does it mean to you?
+        What drives you as an artist? This is the part where people stop scrolling and
+        actually feel something — keep it real, keep it you.
+      </p>
+      <p class="body-text">
+        Add a second paragraph if you want. Talk about your style, your inspirations,
+        what makes your dancing unique. People should feel like they know you before
+        they even hit play.
+      </p>
+    </div>
+    <div class="about-right reveal">
+      <!-- 👇 REPLACE THIS: update these numbers to match your real experience -->
+      <div class="stat-row">
+        <span class="stat-n">2</span>
+        <span class="stat-desc">styles mastered:<br>hip-hop & waacking</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-n">5+</span>
+        <span class="stat-desc">years of training<br>& performance</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-n">∞</span>
+        <span class="stat-desc">creative expression,<br>no ceiling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO PREVIEW
+  ════════════════════════════════════════════ -->
+  <section class="portfolio-preview">
+    <div class="portfolio-header reveal">
+      <h2 class="section-heading light">The <em>work.</em></h2>
+      <a href="portfolio.html" class="see-all">See all →</a>
+    </div>
+    <div class="portfolio-grid reveal">
+
+      <!-- CARD 1 — big featured card -->
+      <!-- 👇 REPLACE: change the background-image or add a video thumbnail -->
+      <div class="p-card p-card-main" style="background:#1a1208;">
+        <div class="play-btn">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+        </div>
+        <div class="card-info">
+          <span class="card-tag">Hip-hop</span>
+          <!-- 👇 REPLACE: change the title of this video/clip -->
+          <p class="card-name">Battle showcase '24</p>
+        </div>
+      </div>
+
+      <div class="p-card-col">
+        <!-- CARD 2 -->
+        <div class="p-card p-card-sm" style="background:#120f1a;">
+          <div class="play-btn small">
+            <svg width="8" height="10" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Waacking</span>
+            <!-- 👇 REPLACE: change title -->
+            <p class="card-name">Girl style session</p>
+          </div>
+        </div>
+        <!-- CARD 3 -->
+        <div class="p-card p-card-sm" style="background:#0f1814;">
+          <div class="play-btn small">
+            <svg width="8" height="10" viewBox="0 0 10 12" fill="#b8965a"><polygon points="0,0 10,6 0,12"/></svg>
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Freestyle</span>
+            <!-- 👇 REPLACE: change title -->
+            <p class="card-name">Studio vol. 1</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ACHIEVEMENTS
+  ════════════════════════════════════════════ -->
+  <section class="achievements" id="achievements">
+    <div class="reveal">
+      <span class="section-kicker">Highlights</span>
+      <h2 class="section-heading">Moments that <em>mattered.</em></h2>
+    </div>
+    <div class="ach-grid reveal">
+
+      <!-- 👇 REPLACE ALL OF THESE with your real achievements -->
+      <!-- Copy-paste more <div class="ach-item"> blocks to add more! -->
+
+      <div class="ach-item">
+        <span class="ach-year">2024</span>
+        <div>
+          <p class="ach-title">Your achievement here</p>
+          <p class="ach-desc">Competition, workshop, performance — whatever you're proud of. Describe it briefly.</p>
+        </div>
+      </div>
+
+      <div class="ach-item">
+        <span class="ach-year">2024</span>
+        <div>
+          <p class="ach-title">Another achievement</p>
+          <p class="ach-desc">Add as many as you like. This section grows with you over time.</p>
+        </div>
+      </div>
+
+      <div class="ach-item">
+        <span class="ach-year">2023</span>
+        <div>
+          <p class="ach-title">A milestone from last year</p>
+          <p class="ach-desc">Could be a collab, a big battle, a class you completed, anything meaningful.</p>
+        </div>
+      </div>
+
+      <div class="ach-item">
+        <span class="ach-year">2022</span>
+        <div>
+          <p class="ach-title">Where it all started</p>
+          <p class="ach-desc">Your origin story moment. Everyone starts somewhere — own it.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="contact" id="contact">
+    <div class="contact-inner reveal">
+      <h2 class="contact-heading">Want to work<br><em>together?</em></h2>
+      <div class="contact-links">
+        <!-- 👇 REPLACE: add your real email and social links -->
+        <a href="mailto:your@email.com" class="contact-btn">your@email.com</a>
+        <div class="social-row">
+          <a href="https://instagram.com/yourhandle" target="_blank" class="social-link">Instagram</a>
+          <span class="dot">·</span>
+          <a href="https://tiktok.com/@yourhandle" target="_blank" class="social-link">TikTok</a>
+          <span class="dot">·</span>
+          <a href="https://youtube.com/@yourhandle" target="_blank" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Angie. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
