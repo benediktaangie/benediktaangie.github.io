@@ -135,9 +135,10 @@ img { max-width: 100%; display: block; }
   transition: color 0.2s;
 }
 .btn-line:hover { color: var(--cream); }
-.cv-downloads .btn-line { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 12px 28px; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; 
-                         border-radius: 1px; transition: background 0.2s, color 0.2s; } 
-.cv-downloads .btn-line:hover { background: var(--gold); color: var(--dark); }
+.cv-downloads { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; } 
+.cv-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-dark); opacity: 0.7; } 
+.cv-link { font-size: 14px; color: var(--gold-dark); text-decoration: underline; text-underline-offset: 4px; letter-spacing: 0.02em; transition: opacity 0.2s; } 
+.cv-link:hover { opacity: 0.55; }
 .hero-right {
   background: #0f0d0b;
   display: flex; align-items: flex-end;
